@@ -4,7 +4,7 @@ const app = require('../src/app');
 test('GET / returns the app name', async () => {
   const response = await request(app).get('/');
   expect(response.status).toBe(200);
-  expect(response.text).toBe('Broken App');
+  expect(response.text).toBe('KT3 App');
 });
 
 test('GET /health returns ok', async () => {
